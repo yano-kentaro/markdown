@@ -1,6 +1,11 @@
 import * as React from 'react'
 import { render } from 'react-dom'
+import styled from 'styled-components' // styleが定義されたコンポーネントを作成出来る
 
-const Main = (<h1>Markdown Editor</h1>)
+const Header = styled.h1`
+  color: red;
+`;
 
-render(Main, document.getElementById('app'))
+const Main = (<Header>Markdown Editor</Header>);
+
+render(Main, document.getElementById('app'));
